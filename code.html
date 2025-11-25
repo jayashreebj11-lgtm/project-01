@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+
+    <style>
+        /* Background */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #6a79ff, #8e54e9);
+            font-family: Arial, sans-serif;
+        }
+
+        /* Card */
+        .card {
+            background: #fff;
+            width: 350px;
+            text-align: center;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Profile Image */
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #6a79ff;
+            margin-bottom: 15px;
+        }
+
+        /* Name */
+        h2 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+
+        /* Bio */
+        .bio {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+
+        .social-links a {
+            padding: 8px 15px;
+            border: 1px solid #6a79ff;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            color: #6a79ff;
+            transition: 0.3s;
+        }
+
+        .social-links a:hover {
+            background: #6a79ff;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="card">
+        <header>
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" 
+                 alt="Profile Image" class="profile-img">
+        </header>
+
+        <section>
+            <h2>John Doe</h2>
+            <p class="bio">
+                Frontend Developer passionate about creating beautiful and functional web
+                experiences. Love coding, design, and coffee!
+            </p>
+        </section>
+
+        <footer>
+            <div class="social-links">
+                <a href="#">GitHub</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Twitter</a>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
